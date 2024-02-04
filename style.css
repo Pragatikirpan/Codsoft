@@ -1,0 +1,424 @@
+                        * {
+                            margin: 0;
+                            padding: 0;
+                            box-sizing: border-box;
+                        }
+                        
+                        body {
+                            background: #1b1b1b;
+                        }
+                        
+                        .main-content {
+                            margin-top: 10rem;
+                            display: inline-flex;
+                        }
+                        
+                        .container-description P {
+                            color: #8f43ee;
+                        }
+                        
+                        .container-description {
+                            margin: 30px;
+                        }
+                        
+                        .container-description h1 {
+                            color: #ffffff;
+                            font-size: 2.4rem;
+                            font-weight: 600;
+                        }
+                        
+                        .main-content .profile {
+                            margin-left: 20px;
+                        }
+                        
+                        .main-content .profile img {
+                            border-radius: 50%;
+                            margin-top: 20px;
+                            width: 370px;
+                            height: 370px;
+                            background-position: 50%;
+                            border: 3px solid #fff;
+                            border-radius: 50%;
+                            position: relative;
+                            box-shadow: 0 0 35px rgba(213, 121, 255, 0.67);
+                        }
+                        
+                        .container .social {
+                            display: flex;
+                        }
+                        
+                        .container .social img {
+                            height: 50px;
+                            margin: 20px;
+                            cursor: pointer;
+                            border-radius: 40px;
+                            transition: 0.5s;
+                        }
+                        
+                        .container .social img:hover {
+                            border: 1px solid#909090;
+                        }
+                        
+                        .buttons {
+                            display: flex;
+                            margin-top: 10px;
+                        }
+                        
+                        .buttons button {
+                            border: none;
+                            background-color: transparent;
+                            color: #000000;
+                            margin: 10px;
+                            background: #c595ff;
+                            height: 2rem;
+                            width: 8rem;
+                            border-radius: 5px;
+                            transition: 0.5s;
+                            -webkit-transition: 0.5s;
+                            -moz-transition: 0.5s;
+                            -ms-transition: 0.5s;
+                            -o-transition: 0.5s;
+                        }
+                        
+                        .buttons button:hover {
+                            color: #fff;
+                            background: #8f43ee;
+                        }
+                        
+                        @media (max-width: 768px) {
+                            .main-content {
+                                flex-direction: column;
+                            }
+                        }
+                        /* education */
+                        
+                        .education-section {
+                            padding: 20px;
+                            max-width: 800px;
+                            margin-left: 100px;
+                        }
+                        
+                        .education-section h2 {
+                            color: #fff;
+                            margin-bottom: 50px;
+                        }
+                        
+                        .education-item {
+                            margin-bottom: 20px;
+                        }
+                        
+                        .education-title {
+                            font-weight: bold;
+                            color: #fff;
+                        }
+                        
+                        .education-institution {
+                            font-style: italic;
+                            color: #8f43ee;
+                        }
+                        
+                        .education-year {
+                            color: #d0cece;
+                        }
+                        
+                        @media (max-width: 768px) {
+                            .education-section {
+                                padding: 10px;
+                            }
+                            .education-item {
+                                margin-bottom: 10px;
+                            }
+                            .education-year {
+                                font-size: 14px;
+                            }
+                        }
+                        /* End of education information */
+                        
+                        .skills-section {
+                            padding: 20px;
+                            background-color: #575757;
+                            text-align: center;
+                        }
+                        
+                        .skill-card h3 {
+                            color: #fff;
+                        }
+                        
+                        .skill-card p {
+                            color: #e1e1e1;
+                        }
+                        
+                        .skills-heading {
+                            font-size: 24px;
+                            color: #fff;
+                            font-weight: bold;
+                            margin-bottom: 20px;
+                        }
+                        
+                        .skills-container {
+                            display: flex;
+                            flex-wrap: wrap;
+                            justify-content: center;
+                        }
+                        
+                        .skill-card {
+                            width: 200px;
+                            margin: 10px;
+                            padding: 15px;
+                            background-color: #282828;
+                            box-shadow: 0 0 10px #c80ff61a;
+                            text-align: center;
+                            transition: transform 0.2s ease-in-out;
+                            transition: 0.5s;
+                            cursor: pointer;
+                        }
+                        
+                        .skill-card:hover {
+                            transform: scale(1.05);
+                            /* Scale the card on hover */
+                            background-color: #8d00c0;
+                            /* Change background color on hover */
+                        }
+                        
+                        .skill-image {
+                            max-width: 100px;
+                            max-height: 100px;
+                            margin: 0 auto 10px;
+                        }
+                        /* Media query for smaller screens */
+                        
+                        @media (max-width: 768px) {
+                            .skills-container {
+                                flex-direction: column;
+                                align-items: center;
+                            }
+                            .skill-card {
+                                width: 80%;
+                            }
+                        }
+                        /* end of skills section */
+                        /* Style the portfolio container */
+                        
+                        .port-heading {
+                            margin-top: 50px;
+                        }
+                        
+                        .port-heading h1 {
+                            color: #fff;
+                            text-align: center;
+                        }
+                        
+                        .portfolio {
+                            display: flex;
+                            justify-content: space-between;
+                            gap: 20px;
+                            /* Adjust the gap between portfolio items */
+                        }
+                        /* Style each portfolio item */
+                        
+                        .port {
+                            flex: 1;
+                            max-width: calc(25% - 20px);
+                            /*Adjustthewidthofeachitemandaccountforthegap*/
+                            text-align: center;
+                            background-color: transparent;
+                            padding: 20px;
+                            border-radius: 5px;
+                            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+                            transition: 0.5s;
+                        }
+                        /* Style the image inside each portfolio item */
+                        
+                        .port:hover {
+                            transform: scale(1.05);
+                            /*Scalethecardonhover*/
+                            background-color: #8d00c0;
+                        }
+                        
+                        .port img {
+                            max-width: 100%;
+                            height: auto;
+                            border-radius: 5px;
+                        }
+                        /* Style the paragraph text */
+                        
+                        .port p {
+                            margin-top: 10px;
+                            font-size: 16px;
+                            color: #ffffff;
+                        }
+                        /* Style the "Download Source code" button */
+                        
+                        .port button {
+                            margin-top: 10px;
+                            padding: 10px 20px;
+                            background-color: #007bff;
+                            color: #fff;
+                            border: none;
+                            border-radius: 5px;
+                            cursor: pointer;
+                            transition: background-color 0.3s ease;
+                            -webkit-transition: background-color 0.3s ease;
+                            -moz-transition: background-color 0.3s ease;
+                            -ms-transition: background-color 0.3s ease;
+                            -o-transition: background-color 0.3s ease;
+                        }
+                        /* Button hover effect */
+                        
+                        .port button:hover {
+                            background-color: #0056b3;
+                        }
+                        /* Media query for responsiveness (adjust as needed) */
+                        
+                        @media screen and (max-width: 768px) {
+                            .port {
+                                max-width: calc(50% - 20px);
+                            }
+                        }
+                        
+                        @media screen and (max-width: 480px) {
+                            .port {
+                                max-width: 100%;
+                            }
+                        }
+                        /* end of project section */
+                        
+                        .contact {
+                            margin-top: 80px;
+                            background: #545454;
+                            height: 35rem;
+                        }
+                        
+                        .contact h1 {
+                            color: #fff;
+                            text-align: center;
+                        }
+                        
+                        .contact-side h1 {
+                            color: #e0e0e0;
+                        }
+                        
+                        .phone {
+                            justify-content: center;
+                            display: flex;
+                            margin-top: 20px;
+                        }
+                        
+                        .phone img {
+                            height: 30px;
+                            color: #fff;
+                        }
+                        
+                        .phone p {
+                            color: #fff;
+                        }
+                        
+                        .email {
+                            justify-content: center;
+                            display: flex;
+                        }
+                        
+                        .email p {
+                            color: #fff;
+                        }
+                        
+                        .email p span {
+                            color: red;
+                        }
+                        
+                        .add {
+                            justify-content: center;
+                            display: flex;
+                        }
+                        
+                        .add img {
+                            height: 30px;
+                            color: #fff;
+                        }
+                        
+                        .add p {
+                            color: #fff;
+                        }
+                        /* .input-section {
+                            display: grid;
+                        }
+                        
+                        .msg-box {
+                            border: 2px solid white;
+                            height: 23rem;
+                            width: 55rem;
+                            display: flex;
+                        }
+                        
+                        .input-section input {
+                            height: 2rem;
+                            width: 25rem;
+                        } */
+                        /* Style the container */
+                        /* Style the container */
+                        
+                        .msg-box {
+                            padding: 20px;
+                            background-color: #f0f0f0;
+                            border: 1px solid #ccc;
+                            border-radius: 5px;
+                            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+                        }
+                        /* Style the input fields */
+                        
+                        .input-section input[type="text"],
+                        .input-section input[type="email"] {
+                            width: 100%;
+                            padding: 10px;
+                            margin-bottom: 10px;
+                            border: 1px solid #ccc;
+                            border-radius: 5px;
+                        }
+                        /* Style the textarea */
+                        
+                        .txt textarea {
+                            width: 100%;
+                            padding: 10px;
+                            margin-bottom: 10px;
+                            border: 1px solid #ccc;
+                            border-radius: 5px;
+                        }
+                        /* Apply placeholder styling (optional) */
+                        
+                        .input-section input::placeholder,
+                        .txt textarea::placeholder {
+                            font-style: italic;
+                            color: #999;
+                        }
+                        
+                        .button {
+                            display: inline-block;
+                            margin: 10px;
+                        }
+                        
+                        .button button {
+                            background-color: #0074cc;
+                            color: #ffffff;
+                            padding: 10px 20px;
+                            border: none;
+                            height: 3rem;
+                            width: 8rem;
+                            margin-left: 700px;
+                            transition: 0.5s;
+                            -webkit-transition: 0.5s;
+                            -moz-transition: 0.5s;
+                            -ms-transition: 0.5s;
+                            -o-transition: 0.5s;
+                        }
+                        
+                        .button button:hover {
+                            background: #004b84;
+                        }
+                        /* Responsive styles for smaller screens */
+                        
+                        @media (max-width: 768px) {
+                            button {
+                                padding: 8px 16px;
+                            }
+                        }
+                        /* Add more styles as needed */
